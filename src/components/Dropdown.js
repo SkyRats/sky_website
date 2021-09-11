@@ -32,7 +32,7 @@ export default function Dropdown() {
   return (
     <Menu as="div" className="flex flex-col items-end">
       <Menu.Button>
-        <MenuIcon className="w-8 h-8" />
+        <MenuIcon className="w-10 h-10" />
       </Menu.Button>
 
       <Transition
@@ -46,7 +46,13 @@ export default function Dropdown() {
         <Menu.Items className="flex flex-col text-right">
           {pages.map((item) => (
             <Menu.Item>
-              <a href={item.link}> {item.name} </a>
+              <a
+                href={item.link}
+                className="text-xl text-gray-light hover:text-gray-lightest"
+              >
+                {" "}
+                {item.name}{" "}
+              </a>
             </Menu.Item>
           ))}
         </Menu.Items>

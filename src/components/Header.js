@@ -1,4 +1,5 @@
 import SkyratsLogo from "../assets/SkyratsLogo";
+import Dropdown from "./Dropdown";
 
 const pages = [
   {
@@ -29,11 +30,12 @@ const pages = [
 
 export default function Header() {
   return (
-    <div className="fixed top-0 z-10 px-8 py-6 w-full flex flex-row justify-between items-center bg-gradient-to-b from-gray-dark to-transparent">
+    <div className="fixed top-0 z-10 px-8 py-6 w-full flex flex-row justify-between items-top bg-gradient-to-b from-gray-dark to-transparent">
       <a href=".">
         <SkyratsLogo />
       </a>
 
+      {/*  
       <div className="flex flex-row">
         {pages.map((item) => (
           <a href={item.link} className="mx-3 text-lg hover:text-gray-lightest">
@@ -42,6 +44,9 @@ export default function Header() {
           </a>
         ))}
       </div>
+      */}
+
+      <Dropdown />
     </div>
   );
 }
