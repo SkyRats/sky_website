@@ -30,8 +30,8 @@ const pages = [
 
 export default function Dropdown() {
   return (
-    <Menu as="div" className="flex flex-col items-end">
-      <Menu.Button>
+    <Menu as="div" className="relative inline-block text-right">
+      <Menu.Button className="bg-gray-dark bg-opacity-20 hover:bg-opacity-40 p-1 rounded-md shadow-lg">
         <MenuIcon className="w-10 h-10" />
       </Menu.Button>
 
@@ -43,12 +43,12 @@ export default function Dropdown() {
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="transform scale-95 opacity-0"
       >
-        <Menu.Items className="flex flex-col text-right">
+        <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-gray-dark rounded-md shadow-lg flex flex-col p-1">
           {pages.map((item) => (
             <Menu.Item>
               <a
                 href={item.link}
-                className="text-xl text-gray-light hover:text-gray-lightest"
+                className="rounded-md w-full p-2 text-lg hover:bg-gray"
               >
                 {" "}
                 {item.name}{" "}
