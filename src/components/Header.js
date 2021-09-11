@@ -36,7 +36,7 @@ export default function Header() {
 
       <div className="flex flex-row">
         {pages.map((item) => (
-          <a href={item.link} className="mx-3 text-lg">
+          <a href={item.link} className="mx-3 text-lg hover:text-gray-lightest">
             {" "}
             {item.name}{" "}
           </a>

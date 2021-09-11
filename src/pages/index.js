@@ -1,4 +1,5 @@
 import SkyratsIcon from "../assets/SkyratsIcon";
+import Equipe from "../components/Equipe";
 import Header from "../components/Header";
 import QuemSomos from "../components/QuemSomos";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <div className="px-8 py-6">
         <SkyratsIcon className="mx-auto my-36" />
         <QuemSomos />
+        <Equipe />
       </div>
     </div>
   );
