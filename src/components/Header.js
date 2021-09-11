@@ -1,4 +1,4 @@
-import Dropdown from "./Dropdown";
+import SkyratsLogo from "../assets/SkyratsLogo";
 
 const pages = [
   {
@@ -29,12 +29,17 @@ const pages = [
 
 export default function Header() {
   return (
-    <div className="flex flex-row justify-between items-center">
-      <span className="text-4xl">SkyRatos</span>
+    <div className="fixed top-0 z-10 px-8 py-6 w-full flex flex-row justify-between items-center bg-gradient-to-b from-gray-dark to-transparent">
+      <a href=".">
+        <SkyratsLogo />
+      </a>
 
       <div className="flex flex-row">
         {pages.map((item) => (
-          <a href={item.link} className='mx-3'> {item.name} </a>
+          <a href={item.link} className="mx-3 text-lg">
+            {" "}
+            {item.name}{" "}
+          </a>
         ))}
       </div>
     </div>
