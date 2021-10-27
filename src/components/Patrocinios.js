@@ -13,8 +13,10 @@ export default function Patrocinios(){
                 não teria a dimensão que tem hoje, ajudando com investimentos, 
                 divulgações e apoios em geral. Somos gratos! 
                 </p>
-                
               </div>
+            </div>
+            <div className="flex items-center flex-col md:flex-row">
+                <img src="/images/parcerias_e_patrocinios.png" alt="patrocinadores" />
             </div>
         </div>
 
