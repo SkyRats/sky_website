@@ -63,13 +63,13 @@ export default function ConquistasMais() {
           </div>
   
           <div>
-            <img src="/images/equipe_fotos.png" alt="fotos das conquistas" />
+            <img src="/images/cobruf2018.png" alt="fotos do troféu cobruf 2018" />
           
-            <img src="/images/equipe_fotos.png" alt="fotos das conquistas" />
+            <img src="/images/imav2019.png" alt="fotos da equipe na imav 2019" />
          
-            <img src="/images/equipe_fotos.png" alt="fotos das conquistas" />
+            <img src="/images/cobruf2019.png" alt="fotos do troféu cobruf 2019/2020" />
           
-            <img src="/images/equipe_fotos.png" alt="fotos das conquistas" />
+            <img src="/images/equipe_fotos.png" alt="fotos da competição CBR" />
           </div>
         </div>
       </div>
