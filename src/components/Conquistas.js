@@ -17,7 +17,7 @@ export default function Conquistas() {
         </div>
 
         <div>
-          <img src="/images/equipe_fotos.png" alt="fotos das conquistas" />
+          <img src="/images/conquistas.png" alt="fotos das conquistas" />
         </div>
       </div>
     </div>
