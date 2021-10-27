@@ -30,9 +30,9 @@ const pages = [
 
 export default function Header() {
   return (
-    <div className="fixed top-0 z-10 px-8 py-6 w-full flex flex-row justify-between items-top bg-gradient-to-b from-gray-dark to-transparent">
-      <a href=".">
-        <SkyratsLogo />
+    <div className="fixed top-0 z-10 px-8 py-6 w-full flex flex-row justify-between items-center items-top bg-gradient-to-b from-gray-dark to-transparent">
+      <a href="/">
+        <SkyratsLogo className="w-5/6"/>
       </a>
 
       {/*  
@@ -46,7 +46,7 @@ export default function Header() {
       </div>
       */}
 
-      <Dropdown />
+      <Dropdown pages={pages} />
     </div>
   );
 }

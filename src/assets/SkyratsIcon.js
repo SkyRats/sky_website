@@ -1,8 +1,7 @@
 export default function SkyratsIcon(props) {
   return (
     <svg
-      width="497"
-      height="200"
+  
       viewBox="0 0 497 200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

@@ -1,8 +1,6 @@
 export default function SkyratsLogo(props) {
   return (
     <svg
-      width="316"
-      height="42"
       viewBox="0 0 316 42"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
