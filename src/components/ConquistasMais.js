@@ -6,7 +6,7 @@ export default function ConquistasMais() {
             <h1 className="text-3xl pb-5" id="conquistas">
               Cobruf Drones 2018
             </h1>
-            <p className="text-lg">
+            <p className="text-lg pb-12">
               A primeira competição da qual a Skyrats participou foi a COBRUF 2018 
               (Competição Brasileira Universitária de Foguetes), iniciativa independente 
               de estudantes de graduação que promove e incentiva grupos técnicos-estudantis 

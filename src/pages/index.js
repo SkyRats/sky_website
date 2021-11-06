@@ -1,8 +1,7 @@
 import SkyratsIcon from "../assets/SkyratsIcon";
-import Conquistas from "../components/Conquistas";
-import Equipe from "../components/Equipe";
 import Header from "../components/Header";
 import QuemSomos from "../components/QuemSomos";
+import Equipe from "../components/Equipe";
 
 export default function Home() {
   return (
@@ -12,6 +11,7 @@ export default function Home() {
       <div className="mx-12">
         <SkyratsIcon className="mx-auto my-48 w-2/3 lg:w-2/5" />
         <QuemSomos />
+        <Equipe />
       </div>
     </div>
   );
