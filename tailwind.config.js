@@ -12,6 +12,12 @@ module.exports = {
       },
       transparent: "transparent",
     },
+    extend: {
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
+       }
+    }
   },
   variants: {
     extend: {},

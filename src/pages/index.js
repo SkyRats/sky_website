@@ -2,6 +2,7 @@ import SkyratsIcon from "../assets/SkyratsIcon";
 import Header from "../components/Header";
 import QuemSomos from "../components/QuemSomos";
 import Equipe from "../components/Equipe";
+import Conquistas from "../components/Conquistas";
 
 export default function Home() {
   return (
