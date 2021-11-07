@@ -30,16 +30,18 @@ const subsistemas = [
 
 export default function Equipe() {
   return (
-    <div>
+    <div className="mb-20">
       <h1 className="text-3xl" id="equipe">
         A Equipe
       </h1>
-
-      <div className="flex flex-row justify-between items-center">
+      <p className="text-lg mt-5">A equipe é dividida em subsitemas, que focam em diferentes partes do trabalho de confecção, divulgação e organização interna. </p>
+      <div className="flex flex-row justify-between items-center flex-wrap">
         {subsistemas.map((sub) => (
           <SubsistemaButton src={sub.src} name={sub.name} />
         ))}
       </div>
+
+      
     </div>
   );
 }
