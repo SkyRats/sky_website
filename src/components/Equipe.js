@@ -1,4 +1,6 @@
+import {useState} from 'react'
 import SubsistemaButton from "./SubsistemaButton";
+
 
 const subsistemas = [
   {
@@ -29,6 +31,9 @@ const subsistemas = [
 ];
 
 export default function Equipe() {
+  //     state,      fn atualiza state
+  const [text, setText] = useState('Hello world')
+
   return (
     <div className="mb-20">
       <h1 className="text-3xl" id="equipe">
@@ -37,11 +42,10 @@ export default function Equipe() {
       <p className="text-lg mt-5">A equipe é dividida em subsitemas, que focam em diferentes partes do trabalho de confecção, divulgação e organização interna. </p>
       <div className="flex flex-row justify-between items-center flex-wrap">
         {subsistemas.map((sub) => (
-          <SubsistemaButton src={sub.src} name={sub.name} />
+          <SubsistemaButton src={sub.src} name={sub.name} key={sub.src} onClick={() => setText(sub.text)} />
         ))}
       </div>
-
-      
+      <div>{text}</div>
     </div>
   );
 }
