@@ -31,21 +31,19 @@ const subsistemas = [
 ];
 
 export default function Equipe() {
-  //     state,      fn atualiza state
-  const [text, setText] = useState('Hello world')
+  const [text, setText] = useState('A equipe é dividida em subsitemas, que focam em diferentes partes do trabalho de confecção, divulgação e organização interna. ')
 
   return (
-    <div className="mb-20">
+    <div className="my-20 md:mt-0">
       <h1 className="text-3xl" id="equipe">
         A Equipe
       </h1>
-      <p className="text-lg mt-5">A equipe é dividida em subsitemas, que focam em diferentes partes do trabalho de confecção, divulgação e organização interna. </p>
+      <p className="text-md md:text-lg mt-5">{text}</p>
       <div className="flex flex-row justify-between items-center flex-wrap">
         {subsistemas.map((sub) => (
           <SubsistemaButton src={sub.src} name={sub.name} key={sub.src} onClick={() => setText(sub.text)} />
         ))}
       </div>
-      <div>{text}</div>
     </div>
   );
 }

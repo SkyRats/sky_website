@@ -8,7 +8,7 @@ export default function SubsistemaButton({src, name, ...props}) {
         alt={"icone " + name}
         className="w-[15vw]"
       />
-      <h1 className="text-lg">{name}</h1>
+      <h1 className="text-sm md:text-lg">{name}</h1>
     </button>
   );
 }
