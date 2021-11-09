@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { MenuIcon } from "@heroicons/react/solid";
 import { Menu, Transition } from "@headlessui/react";
 
