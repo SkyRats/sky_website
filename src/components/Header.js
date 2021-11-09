@@ -6,26 +6,32 @@ const pages = [
   {
     name: "Quem somos",
     link: "#quem-somos",
+    key: "quemsomoskey",
   },
   {
     name: "A Equipe",
     link: "#equipe",
+    key: "aequipekey",
   },
   {
     name: "Conquistas",
     link: "#conquistas",
+    key: "conquistaskey",
   },
   {
     name: "Projetos",
     link: "#projetos",
+    key: "projetoskey",
   },
   {
     name: "Parcerias",
     link: "#parcerias",
+    key: "parceriaskey",
   },
   {
     name: "Apoia-se",
     link: "#apoia-se",
+    key: "apoiasekey",
   },
 ];
 

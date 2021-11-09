@@ -19,7 +19,7 @@ export default function Dropdown({ pages }) {
       >
         <Menu.Items className="absolute right-0 w-56 mt-1 origin-top-right bg-gray-dark bg-opacity-80 rounded-lg shadow-lg flex flex-col p-1">
           {pages.map((item) => (
-            <Menu.Item>
+            <Menu.Item key={item.key}>
               <Link href={item.link}>
                 <a className="rounded-md w-full p-2 text-lg hover:bg-gray-dark">
                   {item.name}
