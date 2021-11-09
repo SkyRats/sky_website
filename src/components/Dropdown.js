@@ -1,8 +1,8 @@
-import Link from 'next/link'
+import Link from "next/link";
 import { MenuIcon } from "@heroicons/react/solid";
 import { Menu, Transition } from "@headlessui/react";
 
-export default function Dropdown({pages}) {
+export default function Dropdown({ pages }) {
   return (
     <Menu as="div" className="relative inline-block text-right">
       <Menu.Button className="bg-gray-dark bg-opacity-60 hover:bg-opacity-80 p-1 rounded-lg shadow-lg">
@@ -19,13 +19,11 @@ export default function Dropdown({pages}) {
       >
         <Menu.Items className="absolute right-0 w-56 mt-1 origin-top-right bg-gray-dark bg-opacity-80 rounded-lg shadow-lg flex flex-col p-1">
           {pages.map((item) => (
-            <Menu.Item key={item.name}>
-              <Link
-                href={item.link}
-                className="rounded-md w-full p-2 text-lg hover:bg-gray-dark"
-              >
-                {" "}
-                {item.name}{" "}
+            <Menu.Item>
+              <Link href={item.link}>
+                <a className="rounded-md w-full p-2 text-lg hover:bg-gray-dark">
+                  {item.name}
+                </a>
               </Link>
             </Menu.Item>
           ))}
