@@ -1,3 +1,4 @@
+import Head from "next/head";
 import SkyratsIcon from "../assets/SkyratsIcon";
 import Header from "../components/Header";
 import QuemSomos from "../components/QuemSomos";
@@ -7,6 +8,11 @@ import Conquistas from "../components/Conquistas";
 export default function Home() {
   return (
     <div className="text-gray-light m-0 p-0">
+      <Head>
+        <title>Skyrats</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+
       <Header />
 
       <div className="mx-12">
