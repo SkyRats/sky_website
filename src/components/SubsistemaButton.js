@@ -4,7 +4,7 @@ export default function SubsistemaButton({src, name, ...props}) {
             {...props}
     >
       <img
-        src={"/images/botao_" + src + ".png"}
+        src={"/images/" + src + ".png"}
         alt={"icone " + name}
         className="w-[15vw]"
       />
