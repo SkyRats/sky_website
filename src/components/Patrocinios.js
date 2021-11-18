@@ -15,8 +15,10 @@ export default function Patrocinios(){
                 </p>
               </div>
             </div>
-            <div className="flex items-center flex-col md:flex-row">
-                <img src="/images/parcerias_e_patrocinios.png" alt="patrocinadores" />
+            <div className="flex items-center justify-center">
+                <div className="bg-opacity-20 bg-gray-light rounded-3xl my-6">
+                <img src="/images/parcerias_e_patrocinios.png" width="960" height="540" alt="patrocinadores"  />
+                </div>
             </div>
         </div>
 
