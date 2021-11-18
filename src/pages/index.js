@@ -6,6 +6,7 @@ import Equipe from "../components/Equipe";
 import Conquistas from "../components/Conquistas";
 import Projetos from "../components/Projetos";
 import Patrocinios from "../components/Patrocinios";
+import Apoie from "../components/Apoie";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Conquistas />
         <Projetos />
         <Patrocinios />
+        <Apoie />
       </div>
     </div>
   );

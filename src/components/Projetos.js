@@ -1,7 +1,6 @@
 import {useState} from 'react'
 import SubsistemaButton from "./SubsistemaButton";
 
-
 const projetos = [
   {
     name: "Gaiola de Testes",
