@@ -29,10 +29,10 @@ export default function Projetos() {
 
   return (
     <div className="my-20 md:mt-0">
-      <h1 className="text-3xl mt-10" id="projetos">
+      <h1 className="text-3xl pb-5 pt-20" id="projetos">
         Os Projetos
       </h1>
-      <p className="text-md md:text-lg mt-5">{text}</p>
+      <p className="text-md md:text-lg">{text}</p>
       <div className="flex flex-row justify-between items-center flex-wrap">
         {projetos.map((pjt) => (
           <SubsistemaButton src={pjt.src} name={pjt.name} key={pjt.src} onClick={() => setText(pjt.text)} />

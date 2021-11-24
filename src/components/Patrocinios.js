@@ -3,7 +3,7 @@ export default function Patrocinios(){
         <div>
             <div className="flex items-center flex-col md:flex-row">
               <div> 
-                <h1 className="text-3xl pb-5 " id="parcerias">
+                <h1 className="text-3xl pb-5 pt-20" id="parcerias">
                     Patrocínios e Parcerias
                 </h1>
                 <p className="text-md md:text-lg">
@@ -16,7 +16,7 @@ export default function Patrocinios(){
               </div>
             </div>
             <div className="flex items-center justify-center">
-                <div className="bg-opacity-20 bg-gray-light rounded-3xl my-6">
+                <div className="bg-opacity-20 bg-gray-light rounded-3xl mt-6">
                 <img src="/images/parcerias_e_patrocinios.png" width="960" height="540" alt="patrocinadores"  />
                 </div>
             </div>

@@ -2,11 +2,11 @@ export default function Conquistas() {
   return (
     <div>
       <div className="flex items-center flex-col md:flex-row">
-        <div className="md:mr-8">
+        <div className="md:mr-8 mt-20">
           <img src="/images/conquistas.png" alt="fotos das conquistas" />
         </div>
         <div>
-          <h1 className="text-3xl pb-5" id="conquistas">
+          <h1 className="text-3xl pb-5 pt-20" id="conquistas">
             Conquistas
           </h1>
           <p className="text-md md:text-lg md:mb-8">

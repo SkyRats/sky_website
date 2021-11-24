@@ -3,10 +3,10 @@ export default function QuemSomos() {
     <div>
       <div className="flex items-center flex-col md:flex-row">
         <div>
-          <h1 className="text-3xl pb-5" id="quem-somos">
+          <h1 className="text-3xl pb-5 pt-20" id="quem-somos">
             Quem Somos
           </h1>
-          <p className="text-md md:text-lg mb-12">
+          <p className="text-md md:text-lg">
             A Skyrats surgiu em 2017 na Escola Politécnica de São Paulo, com
             orientação do professor Marcelo Zuffo e participação inicial de 15
             membros. Atualmente somos uma equipe composta por mais de 70 membros
