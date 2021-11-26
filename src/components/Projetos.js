@@ -29,11 +29,11 @@ export default function Projetos() {
 
   return (
     <div className="my-20 md:mt-0">
-      <h1 className="text-3xl mt-10 font-bold" id="projetos">
+      <h1 className="text-3xl py-5 mt-5 font-semibold" id="projetos">
         Os Projetos
       </h1>
-      <p className="text-md md:text-lg">{text}</p>
-      <div className="flex flex-row justify-between items-center flex-wrap">
+      <p className="text-md md:text-lg ">{text}</p>
+      <div className="flex flex-row justify-between items-center flex-wrap mt-3">
         {projetos.map((pjt) => (
           <SubsistemaButton src={pjt.src} name={pjt.name} key={pjt.src} onClick={() => setText(pjt.text)} />
         ))}
