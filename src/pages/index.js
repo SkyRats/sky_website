@@ -27,6 +27,15 @@ export default function Home() {
         <Patrocinios />
         <Apoie />
       </div>
+
+      <div className="items-center bg-gray-dark">
+        <footer>
+        <div className="flex flex-row ml-10 h-20 py-7 w-max ">
+        <p>© 2021 Skyrats.</p>
+        </div>
+        </footer>
+      </div>
+      
     </div>
   );
 }
