@@ -33,8 +33,8 @@ export default function Equipe() {
   const [text, setText] = useState('A equipe é dividida em subsitemas, que focam em diferentes partes do trabalho de confecção, divulgação e organização interna. ')
 
   return (
-    <div className="my-20 md:mt-0">
-      <h1 className="text-3xl font-semibold" id="equipe">
+    <div className="my-20 md:mt-0" id="equipe">
+      <h1 className="text-3xl pb-5 pt-20 font-semibold" >
         A Equipe
       </h1>
       <p className="text-md md:text-lg mt-5">{text}</p>

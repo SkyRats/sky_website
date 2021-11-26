@@ -1,9 +1,9 @@
 export default function QuemSomos() {
   return (
     <div>
-      <div className="flex items-center flex-col md:flex-row">
+      <div className="flex items-center flex-col md:flex-row" id="quem-somos">
         <div>
-          <h1 className="text-3xl pb-5 font-semibold" id="quem-somos">
+          <h1 className="text-3xl pb-5 pt-20 font-semibold" >
             Quem Somos
           </h1>
           <p className="text-md md:text-lg">

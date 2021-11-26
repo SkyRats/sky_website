@@ -28,8 +28,8 @@ export default function Projetos() {
   const [text, setText] = useState('Estes são os projetos que a equipe realizou ou está realizando até o momento presente. ')
 
   return (
-    <div className="my-20 md:mt-0">
-      <h1 className="text-3xl py-5 mt-5 font-semibold" id="projetos">
+    <div className="md:mt-0" id="projetos">
+      <h1 className="text-3xl pb-5 pt-20 font-semibold" >
         Os Projetos
       </h1>
       <p className="text-md md:text-lg ">{text}</p>
