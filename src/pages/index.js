@@ -7,6 +7,8 @@ import Conquistas from "../components/Conquistas";
 import Projetos from "../components/Projetos";
 import Patrocinios from "../components/Patrocinios";
 import Apoie from "../components/Apoie";
+import Footer from "../components/Footer";
+
 
 export default function Home() {
   return (
@@ -28,13 +30,7 @@ export default function Home() {
         <Apoie />
       </div>
 
-      <div className="items-center bg-gray-dark">
-        <footer>
-        <div className="flex flex-row ml-10 h-20 py-7 w-max ">
-        <p>© 2021 Skyrats.</p>
-        </div>
-        </footer>
-      </div>
+      <Footer/>
       
     </div>
   );
