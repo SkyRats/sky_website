@@ -1,8 +1,8 @@
 export default function Conquistas() {
   return (
     <div>
-      <div className="flex items-center flex-col md:flex-row">
-        <div className="md:mr-8">
+      <div className="flex items-center flex-col-reverse md:flex-row">
+        <div className="md:mr-8 mt-20">
           <img src="/images/conquistas.png" alt="fotos das conquistas" />
         </div>
         <div>
