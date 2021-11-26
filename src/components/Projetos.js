@@ -29,7 +29,7 @@ export default function Projetos() {
 
   return (
     <div className="my-20 md:mt-0">
-      <h1 className="text-3xl pb-5 pt-20" id="projetos">
+      <h1 className="text-3xl py-5" id="projetos">
         Os Projetos
       </h1>
       <p className="text-md md:text-lg">{text}</p>

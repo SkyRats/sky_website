@@ -7,7 +7,7 @@ export default function Apoie() {
                     Todo apoio, principalmente da comunidade geral, é bem-vindo. Esse apoio pode ser feito com divulgações, patrocínios, doações de materiais e auxílio financeiro.  Caso queira, você pode utilizar o QR Code a seguir para realizar um pix como doação a equipe!
                 </p>
             </div>
-            <div className="w-1/8 mb-5 pt-20">
+            <div className="w-1/3 my-5 md:pt-20">
                 <img src="/images/qrcode.png" alt="qrcode para doação" />
             </div>
       </div>

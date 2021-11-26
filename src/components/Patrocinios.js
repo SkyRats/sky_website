@@ -3,7 +3,7 @@ export default function Patrocinios(){
         <div>
             <div className="flex items-center flex-col md:flex-row">
               <div> 
-                <h1 className="text-3xl pb-5 pt-20" id="parcerias">
+                <h1 className="text-3xl py-5" id="parcerias">
                     Patrocínios e Parcerias
                 </h1>
                 <p className="text-md md:text-lg">
