@@ -3,10 +3,10 @@ export default function Patrocinios(){
         <div>
             <div className="flex items-center flex-col md:flex-row">
               <div> 
-                <h1 className="text-3xl pb-5 " id="parcerias">
+                <h1 className="text-3xl pb-5 font-bold" id="parcerias">
                     Patrocínios e Parcerias
                 </h1>
-                <p className="text-md md:text-lg">
+                <p className="text-md md:text-lg ">
                 A nossa organização possui o apoio de patrocinadores que 
                 ajudam a equipe a evoluir e se manter atualizada na inovadora 
                 tecnologia que é o drone autônomo. Sem eles, nossa equipe 

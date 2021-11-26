@@ -6,7 +6,7 @@ export default function Conquistas() {
           <img src="/images/conquistas.png" alt="fotos das conquistas" />
         </div>
         <div>
-          <h1 className="text-3xl pb-5" id="conquistas">
+          <h1 className="text-3xl pb-5 font-bold" id="conquistas">
             Conquistas
           </h1>
           <p className="text-md md:text-lg md:mb-8">

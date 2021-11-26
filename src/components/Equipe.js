@@ -34,7 +34,7 @@ export default function Equipe() {
 
   return (
     <div className="my-20 md:mt-0">
-      <h1 className="text-3xl" id="equipe">
+      <h1 className="text-3xl font-bold" id="equipe">
         A Equipe
       </h1>
       <p className="text-md md:text-lg mt-5">{text}</p>
