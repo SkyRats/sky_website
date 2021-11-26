@@ -3,7 +3,7 @@ export default function QuemSomos() {
     <div>
       <div className="flex items-center flex-col md:flex-row">
         <div>
-          <h1 className="text-3xl pb-5 font-bold" id="quem-somos">
+          <h1 className="text-3xl pb-5 font-semibold" id="quem-somos">
             Quem Somos
           </h1>
           <p className="text-md md:text-lg">

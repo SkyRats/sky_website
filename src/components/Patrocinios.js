@@ -1,9 +1,9 @@
 export default function Patrocinios(){
     return(
         <div>
-            <div className="flex items-center flex-col md:flex-row">
+            <div className="flex items-center flex-col md:flex-row" id="parcerias">
               <div> 
-                <h1 className="text-3xl py-5" id="parcerias">
+                <h1 className="text-3xl py-5 font-semibold" >
                     Patrocínios e Parcerias
                 </h1>
                 <p className="text-md md:text-lg ">
