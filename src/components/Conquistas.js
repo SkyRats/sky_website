@@ -1,12 +1,12 @@
 export default function Conquistas() {
   return (
     <div>
-      <div className="flex items-center flex-col md:flex-row">
-        <div className="md:mr-8">
+      <div className="flex items-center flex-col-reverse md:flex-row">
+        <div className="py-5 mt-20 md:mr-8">
           <img src="/images/conquistas.png" alt="fotos das conquistas" />
         </div>
         <div>
-          <h1 className="text-3xl pb-5" id="conquistas">
+          <h1 className="text-3xl pb-5 pt-20 font-semibold" id="conquistas">
             Conquistas
           </h1>
           <p className="text-md md:text-lg md:mb-8">

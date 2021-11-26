@@ -29,7 +29,7 @@ const pages = [
     key: "parceriaskey",
   },
   {
-    name: "Apoia-se",
+    name: "Apoie-nos",
     link: "#apoia-se",
     key: "apoiasekey",
   },
