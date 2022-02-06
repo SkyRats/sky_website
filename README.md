@@ -1,6 +1,10 @@
-## Getting Started
+## System Requirements
+
+- [Node.js 12.22.0](https://nodejs.org/en/) or later
 
 (Roda um ```npm install``` antes pra instalar as dependências :P)
+
+## Getting Started
 
 First, run the development server:
 
