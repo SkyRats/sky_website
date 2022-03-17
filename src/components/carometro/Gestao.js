@@ -28,7 +28,7 @@ export default function Gestao() {
     const [text, setText] = useState( 'A gestão atua na organização interna da equipe, nas finanças e nos eventos tanto internos quanto externos, além de ser responsável pelos patrocínios e parcerias.')
     
     return (
-    <div className="flex items-center flex-col-reverse md:flex-row">
+    <div className="">
         <h1 className="text-3xl pb-5 pt-20 font-semibold" id="gestao">
           Gestão
         </h1>

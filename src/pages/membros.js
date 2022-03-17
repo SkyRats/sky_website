@@ -20,7 +20,7 @@ export default function Home() {
   
         <Header />
   
-        <div className="mx-12">
+        <div className="max-w-7xl mx-auto pt-8">
             <Cocapitania />
             <Comunicacao />
             <Gestao />
