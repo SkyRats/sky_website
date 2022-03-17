@@ -38,7 +38,7 @@ export default function Equipe() {
         A Equipe
       </h1>
       <p className="text-md md:text-lg mt-5">{text}</p>
-      <div className="flex flex-row justify-between items-center flex-wrap">
+      <div className="flex flex-row ml-16 md:ml-0 md:justify-between items-center flex-wrap">
         {subsistemas.map((sub) => (
           <SubsistemaButton src={sub.src} name={sub.name} key={sub.src} onClick={() => setText(sub.text)} />
         ))}

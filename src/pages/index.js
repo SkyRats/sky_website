@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="text-gray-light m-0 p-0">
+    <div className="text-gray-light">
       <Head>
         <title>Skyrats</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -21,7 +21,8 @@ export default function Home() {
       <Header />
 
       <div className="max-w-7xl mx-auto mt-8">
-        <SkyratsIcon className="mx-auto my-48 w-2/3 lg:w-2/5" />
+        
+        <SkyratsIcon className="mx-auto my-[300px] w-3/4 lg:w-1/2" />
         <QuemSomos />
         <Equipe />
         <Conquistas />
