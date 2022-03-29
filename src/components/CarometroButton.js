@@ -5,7 +5,7 @@ export default function CarometroButton({src, name, ...props}) {
       >
         <img
           src={"/images/carometro_img/" + src + ".jpg"}
-          alt={"icone " + name}
+          alt={"imagem " + name}
           className="h-24 w-auto object-cover rounded-full"
         />
         <h1 className="text-sm md:text-lg">{name}</h1>

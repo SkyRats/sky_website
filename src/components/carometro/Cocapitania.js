@@ -9,7 +9,7 @@ export default function Cocapitania() {
         <p className="text-md md:text-lg md:mb-8">
             A Co-Capitania é a junção dos dois cargos responsáveis pela representação 
             e organização da equipe. 
-        </p>
+        </p>        
       </div>
     );
 }
