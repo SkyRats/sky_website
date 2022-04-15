@@ -5,3 +5,8 @@
 html {
     background-image: url(../../public/images/bg.png);
 }
+
+.hexagon{
+    background-color: blueviolet;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
