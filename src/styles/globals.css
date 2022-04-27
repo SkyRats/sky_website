@@ -9,10 +9,10 @@ html {
 .hexagon{
     position: relative;
     background-color: #eeee;
+    background-image: linear-gradient(#eeee, #cbd5e1);
     width: 13vw;
     height: 11vw;    
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    border-radius: 2em;
 }
 
 @media screen and (max-width: 1200px) {
@@ -22,7 +22,6 @@ html {
         width: 18vw;
         height: 15.5vw;    
         clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        border-radius: 2em;
     }
 }
 
@@ -33,7 +32,6 @@ html {
         width: 30vw;
         height: 26vw;    
         clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        border-radius: 2em;
     }
 }
 
