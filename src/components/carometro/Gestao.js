@@ -22,6 +22,26 @@ const pessoas = [
     src: "fulano4",
     text: "link",
   },
+  {
+    name: "Fulano1",
+    src: "fulano1",
+    text: "link",
+  },
+  {
+    name: "Fulano2",
+    src: "fulano2",
+    text: "link",
+  },
+  {
+    name: "Fulano3",
+    src: "fulano3",
+    text: "link",
+  },
+  {
+    name: "Fulano4",
+    src: "fulano4",
+    text: "link",
+  },
 ];
 
 export default function Gestao() {
@@ -33,9 +53,9 @@ export default function Gestao() {
           Gestão
         </h1>
         <p className="text-md md:text-lg md:mb-8">{text}</p>
-        <div className="flex flex-row justify-between items-center flex-wrap mt-3">
+        <div className="flex flex-row place-content-around items-center flex-wrap mt-3">
             {pessoas.map((pjt) => (
-                <CarometroButton src={pjt.src} name={pjt.name} key={pjt.src} onClick={() => setText(pjt.text)} />
+                <CarometroButton src={pjt.src} name={pjt.name} key={pjt.src}/>
             ))}
         </div>
       </div>

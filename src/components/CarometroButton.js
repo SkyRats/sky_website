@@ -1,13 +1,13 @@
 export default function CarometroButton({src, name, ...props}) {
     return (
-      <button className="flex flex-col items-center transition duration-300 ease-in-out hover:scale-110"
+      <button className="flex flex-col items-center px-2 py-4 transition duration-300 ease-in-out hover:scale-110"
               {...props}
       >
-        <div class= "hexagon">
+        <div class= "flex flex-col items-center mb-2 hexagon">
         <img
           src={"/images/carometro_img/" + src + ".png"}
           alt={"icone " + name}
-          className="w-[25vw] md:w-[13vw] object-cover linear-gradient(to bottom, gray, white)"
+          className="h-[30vw] w-[30vw] object-cover"
         />
         </div>
 

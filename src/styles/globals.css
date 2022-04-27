@@ -9,8 +9,31 @@ html {
 .hexagon{
     position: relative;
     background-color: #eeee;
-    width: 280;
-    height: 242,5;    
+    width: 13vw;
+    height: 11vw;    
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    padding-top: 1.5em;
+    border-radius: 2em;
 }
+
+@media screen and (max-width: 1200px) {
+    .hexagon{
+        position: relative;
+        background-color: #eeee;
+        width: 18vw;
+        height: 15.5vw;    
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        border-radius: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hexagon{
+        position: relative;
+        background-color: #eeee;
+        width: 30vw;
+        height: 26vw;    
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        border-radius: 2em;
+    }
+}
+
