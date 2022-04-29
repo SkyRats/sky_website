@@ -1,25 +1,10 @@
 import {useState} from 'react'
 import CarometroButton from "../CarometroButton";
 
-const pessoas = [
+const pessoas = [  
   {
-    name: "Artur Paparounis",
-    src: "papas",
-    text: "link",
-  },
-  {
-    name: "Bento Brandani",
-    src: "bento",
-    text: "link",
-  },
-  {
-    name: "Brenda Moreira",
-    src: "brenda",
-    text: "link",
-  },
-  {
-    name: "Carine Guzzi",
-    src: "cari",
+    name: "Fernanda Akemi",
+    src: "fefi",
     text: "link",
   },
   {
@@ -28,60 +13,17 @@ const pessoas = [
     text: "link",
   },
   {
-    name: "Dayane Pereira",
-    src: "dayane",
-    text: "link",
-  },
-  {
-    name: "Enzo Belém",
-    src: "enzo",
-    text: "link",
-  },
-  {
-    name: "Fabio Lee",
-    src: "fabio",
-    text: "link",
-  },
-  {
     name: "Felipe Almeida",
     src: "almeida",
     text: "link",
   },
-  {
-    name: "Felipe Cardenas",
-    src: "cardenas",
-    text: "link",
-  },
+
   {
     name: "Felipe Jordão",
     src: "jordao",
     text: "link",
   },
-  {
-    name: "Felipe Mizumoto",
-    src: "kenji",
-    text: "link",
-  },
-  {
-    name: "Fernanda Akemi",
-    src: "fefi",
-    text: "link",
-  },
-  {
-    name: "Fernando Gentil",
-    src: "gentil",
-    text: "link",
-  },
-  {
-    name: "Fernando Zolubas",
-    src: "zolubas",
-    text: "link",
-  },
-  {
-    name: "Gabriel Akira",
-    src: "akira",
-    text: "link",
-  },
+
   {
     name: "Gabriel Pereira",
     src: "pereira",
@@ -90,46 +32,6 @@ const pessoas = [
   {
     name: "Gabriel Ribeiro",
     src: "ribeiro",
-    text: "link",
-  },
-  {
-    name: "Gabriel Ziroldo",
-    src: "ziroldo",
-    text: "link",
-  },
-  {
-    name: "Gabriela Ishikawa",
-    src: "gabs",
-    text: "link",
-  },
-  {
-    name: "Gustavo Hungerbuhler",
-    src: "gustavo",
-    text: "link",
-  },
-  {
-    name: "Henrique Barros",
-    src: "barros",
-    text: "link",
-  },
-  {
-    name: "Henrique Kawamura",
-    src: "kawamura",
-    text: "link",
-  },
-  {
-    name: "Igor Tresolavy",
-    src: "igor",
-    text: "link",
-  },
-  {
-    name: "João Guazzelli",
-    src: "guazzelli",
-    text: "link",
-  },
-  {
-    name: "João Albiero",
-    src: "albiero",
     text: "link",
   },
   {
@@ -143,58 +45,8 @@ const pessoas = [
     text: "link",
   },
   {
-    name: "João Pedro Moraes",
-    src: "jp",
-    text: "link",
-  },
-  {
-    name: "Julia Silberman",
-    src: "julia",
-    text: "link",
-  },
-  {
     name: "Kléber Keithi",
     src: "kleber",
-    text: "link",
-  },
-  {
-    name: "Larissa Fontes",
-    src: "lari",
-    text: "link",
-  },
-  {
-    name: "Leonardo Leite",
-    src: "leo",
-    text: "link",
-  },
-  {
-    name: "Lucas Silveira",
-    src: "lucaseduardo",
-    text: "link",
-  },
-  {
-    name: "Lucas Felipe",
-    src: "lucasfelipe",
-    text: "link",
-  },
-  {
-    name: "Lucas Galvão",
-    src: "lucasgalvao",
-    text: "link",
-  },
-  {
-    name: "Lucia de Santi",
-    src: "lucia",
-    text: "link",
-  },
-  {
-    name: "Marcos Paulo",
-    src: "marcos",
-    text: "link",
-  },
-  {
-    name: "Mateus Bonelli",
-    src: "bonelli",
     text: "link",
   },
   {
@@ -208,78 +60,8 @@ const pessoas = [
     text: "link",
   },
   {
-    name: "Matheus Vasconcelos",
-    src: "matheus",
-    text: "link",
-  },
-  {
-    name: "Matteus Hideki",
-    src: "hideki",
-    text: "link",
-  },
-  {
-    name: "Miguel Aguena",
-    src: "miguel",
-    text: "link",
-  },
-  {
     name: "Miyuki Yamashita",
     src: "miyuki",
-    text: "link",
-  },
-  {
-    name: "Murilo Augusto",
-    src: "muriloa",
-    text: "link",
-  },
-  {
-    name: "Murilo Ferreira",
-    src: "murilof",
-    text: "link",
-  },
-  {
-    name: "Paulo Orglmeister",
-    src: "paulo",
-    text: "link",
-  },
-  {
-    name: "Pedro Fuoco",
-    src: "fuoco",
-    text: "link",
-  },
-  {
-    name: "Rafael Varanda",
-    src: "varanda",
-    text: "link",
-  },
-  {
-    name: "Renato da Silva",
-    src: "renato",
-    text: "link",
-  },
-  {
-    name: "Ricardo Chiquetto",
-    src: "rick",
-    text: "link",
-  },
-  {
-    name: "Sophia Celine",
-    src: "soph",
-    text: "link",
-  },
-  {
-    name: "Thomas Lutes",
-    src: "thomas",
-    text: "link",
-  },
-  {
-    name: "Tomaz Suller",
-    src: "tomaz",
-    text: "link",
-  },
-  {
-    name: "Weslley de Oliveira",
-    src: "weslley",
     text: "link",
   },
 ];
