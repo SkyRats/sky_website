@@ -20,9 +20,9 @@ export default function Home() {
 
       <Header />
 
-      <div className="max-w-7xl mx-auto mt-8">
+      <div className="max-w-7xl xl:mx-auto mx-10 mt-8">
         
-        <SkyratsIcon className="mx-auto my-[300px] w-3/4 lg:w-1/2" />
+        <SkyratsIcon className="mx-auto my-[40vh] w-3/4 lg:w-1/2" />
         <QuemSomos />
         <Equipe />
         <Conquistas />

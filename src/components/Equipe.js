@@ -1,5 +1,7 @@
 import {useState} from 'react'
+import Link from 'next/link'
 import SubsistemaButton from "./SubsistemaButton";
+import { ArrowRightIcon } from "@heroicons/react/solid";
 
 const subsistemas = [
   {
@@ -33,7 +35,7 @@ export default function Equipe() {
   const [text, setText] = useState('A equipe é dividida em subsitemas, que focam em diferentes partes do trabalho de confecção, divulgação e organização interna. ')
 
   return (
-    <div className="my-20 md:mt-0" id="equipe">
+    <div className="flex flex-col my-20 md:mt-0" id="equipe">
       <h1 className="text-3xl pb-5 pt-20 font-semibold" >
         A Equipe
       </h1>
@@ -42,6 +44,15 @@ export default function Equipe() {
         {subsistemas.map((sub) => (
           <SubsistemaButton src={sub.src} name={sub.name} key={sub.src} onClick={() => setText(sub.text)} />
         ))}
+      </div>
+      <div className='flex items-center mx-auto'>
+        <Link href="/membros">
+          <a className='flex flex-col itens-center mt-5 p-4 rounded-lg border-2 border-[#303437] hover:bg-[#303437] transition duration-300 ease-in-out hover:scale-110 '>
+            <p className='text-lg font-bold'>Conheça nossos membros!</p>
+            <ArrowRightIcon className='h-5'/>
+          </a>
+        </Link>
+
       </div>
     </div>
   );

@@ -28,7 +28,6 @@ export default function Home() {
             <Mecanica />
             <Software />
             <CCO />
-            <Exmembros />
 
         </div>
 

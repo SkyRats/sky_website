@@ -43,6 +43,11 @@ const pessoas = [
     text: "link",
   },
   {
+    name: "Matteus Hideki",
+    src: "hideki",
+    text: "link",
+  },
+  {
     name: "Pedro Fuoco",
     src: "fuoco",
     text: "link",

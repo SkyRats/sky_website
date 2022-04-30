@@ -43,11 +43,6 @@ const pessoas = [
     text: "link",
   },
   {
-    name: "Lucia de Santi",
-    src: "lucia",
-    text: "link",
-  },
-  {
     name: "Matteus Hideki",
     src: "hideki",
     text: "link",
@@ -55,11 +50,6 @@ const pessoas = [
   {
     name: "Miyuki Yamashita",
     src: "miyuki",
-    text: "link",
-  },
-  {
-    name: "Rafael Varanda",
-    src: "varanda",
     text: "link",
   },
 ];
