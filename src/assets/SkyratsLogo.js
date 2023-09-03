@@ -159,10 +159,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -172,10 +172,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint2_linear"
@@ -185,10 +185,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint3_linear"
@@ -198,10 +198,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint4_linear"
@@ -211,10 +211,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint5_linear"
@@ -224,10 +224,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint6_linear"
@@ -237,10 +237,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint7_linear"
@@ -250,10 +250,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint8_linear"
@@ -263,10 +263,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint9_linear"
@@ -276,10 +276,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint10_linear"
@@ -289,10 +289,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint11_linear"
@@ -302,10 +302,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint12_linear"
@@ -315,10 +315,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint13_linear"
@@ -328,10 +328,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint14_linear"
@@ -341,10 +341,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint15_linear"
@@ -354,10 +354,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint16_linear"
@@ -367,10 +367,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
         <linearGradient
           id="paint17_linear"
@@ -380,10 +380,10 @@ export default function SkyratsLogo(props) {
           y2="169.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7F7F7" />
-          <stop offset="0.4057" stop-color="#F3F3F3" />
-          <stop offset="0.7484" stop-color="#E9E8E9" />
-          <stop offset="1" stop-color="#DCDCDD" />
+          <stop stopColor="#F7F7F7" />
+          <stop offset="0.4057" stopColor="#F3F3F3" />
+          <stop offset="0.7484" stopColor="#E9E8E9" />
+          <stop offset="1" stopColor="#DCDCDD" />
         </linearGradient>
       </defs>
     </svg>
