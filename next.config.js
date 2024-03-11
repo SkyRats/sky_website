@@ -5,7 +5,7 @@ module.exports = {
     return [
       {
         source: '/greet',
-        destination: 'https://forms.gle/yzYL7T5easEfpgYM6',
+        destination: 'https://www.instagram.com/skyrats_drones/',
         permanent: false
       }
     ];
