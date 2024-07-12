@@ -27,7 +27,7 @@ export default function Home() {
       <div className="my-auto justify-center">
         <h1 className="text-4xl font-bold text-center text-white mb-5">Website em Desenvolvimento</h1>
 
-        <SkyratsIcon className="max-w-md mx-auto" onClick={play} />
+        <SkyratsIcon className="max-w-md mx-5" onClick={play} />
 
         <p className="text-lg mt-5 text-center">Confira nosso instagram: <a style={{color: "grey"}} href="https://instagram.com/skyrats_drones" target="_blank" rel="noreferrer">@skyrats_drones</a></p>
       </div>
