@@ -1,7 +1,6 @@
 export default function SkyratsIcon(props) {
   return (
     <svg
-  
       viewBox="0 0 497 200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -104,6 +103,8 @@ export default function SkyratsIcon(props) {
         fill="white"
       />
       <path
+        onClick={props.onClick}
+        className="hover:cursor-pointer hover:text-red"
         d="M287.992 107.472L248.194 146.673L209.082 107.493V157.462L248.2 198.201L287.992 157.389V107.472Z"
         fill="url(#paint11_linear)"
       />
