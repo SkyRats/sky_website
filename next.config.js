@@ -5,7 +5,7 @@ module.exports = {
     return [
       {
         source: '/greet',
-        destination: 'https://www.instagram.com/skyrats_drones/',
+        destination: 'https://beacons.ai/skyrats?fbclid=PAY2xjawGh0hNleHRuA2FlbQIxMQABplOp_W4eshzx2fyRp8eBsOpGHFIX_zjK1chkn4dXrue363i9WlU17s82lw_aem_oqyq-NrXAbXvB5AYT7dgWw',
         permanent: false
       },
       {
