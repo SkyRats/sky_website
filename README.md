@@ -33,5 +33,6 @@ We always want to know where our content it's going to be displayed and how we m
 
 - Deployment to production occurs in main branch, if the last commit was signed by skyrats.poli@gmail.com
 - Tough Swagger UI is not deployed, the api endpoints should be annotated with OpenAPI, copy and paste `app/api/openapi.yml` file [in this webviewer](https://editor.swagger.io/) to get access to API documentation
+- Unit testing for the API is configured with jest, it runs automatically in all branchs upon push and can be triggered locally with `$ npm run test`
 
 Happy codding!
