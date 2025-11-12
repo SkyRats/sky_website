@@ -23,7 +23,7 @@ We always want to know where our content it's going to be displayed and how we m
 
 ## Techical bullet points for local development
 
-- Use node > v20
+- Use node >= v20
 - You will need a local redis server or connect to production server (not recommended)
 - Copy `.env.sample` file to a new `.env.development.local` file
 - `$ npm i` to install dependencies

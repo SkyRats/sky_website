@@ -1,0 +1,46 @@
+# .github/workflows/tests.yml
+
+name: Run Unit Tests
+
+# Triggers the workflow on push or pull request events for *all* branches
+on:
+  push:
+  pull_request:
+
+jobs:
+  # Job to run the Jest test suite
+  test:
+    name: Run Jest Tests
+    runs-on: ubuntu-latest
+
+    # Use a matrix to test on Node 20 and 22
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
+
+    steps:
+      # 1. Checks out your repository's code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Sets up the specified Node.js version
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          # Enables caching for npm dependencies
+          cache: 'npm'
+
+      # 3. Installs dependencies using 'npm ci' (clean install)
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Runs the 'npm test' script
+      - name: Run tests
+        run: npm test
+        env:
+          # This pulls the API key from your GitHub repository secrets
+          BEARER_API_KEY: TEST_BEARER_API_KEY
+
+          # Provide a dummy value for the test environment
+          REDIS_URL: "redis://dummy-url-for-ci"
