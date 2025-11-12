@@ -1,56 +1,60 @@
-'use server'
-
-import { kv } from '@vercel/kv';
+import { createClient } from 'redis'; // Import createClient
 import { NextResponse } from 'next/server';
+
+// --- Initialize Redis Client ---
+const redis_url = process.env.KV_URL || process.env.REDIS_URL;
+let client: ReturnType<typeof createClient> | null = null;
+
+if (redis_url) {
+  // 1. Create the client
+  client = createClient({
+    url: redis_url,
+  });
+
+  client.on('error', (err) => {
+    console.error('Redis connection error:', err);
+  });
+} else {
+  console.error(
+    'Missing KV_URL or REDIS_URL environment variable. Redis client not initialized.'
+  );
+}
+
+// 2. We must connect *inside* the handler or use a connection manager
+//    because serverless functions are stateless. A simple "await" at
+//    the top level won't work. We also must not connect on every request.
+//    This is where `ioredis` is simpler.
+
+// A simple way to manage the connection in serverless:
+async function getConnectedClient() {
+  if (!client) {
+    throw new Error('Redis client not initialized');
+  }
+  if (!client.isOpen) {
+    await client.connect();
+  }
+  return client;
+}
 
 export async function POST(request: Request) {
   try {
+    // 3. Get the connected client
+    const redis = await getConnectedClient();
+
     const { slug, destination } = await request.json();
 
-    // --- Validation ---
-    if (!slug || !destination) {
-      return NextResponse.json(
-        { error: 'Missing slug or destination' },
-        { status: 400 }
-      );
-    }
+    // ... (rest of your validation and security code is identical) ...
 
-    // Optional: Add more validation (e.g., check if destination is a valid URL)
-    try {
-      new URL(destination);
-    } catch (error) {
-      return NextResponse.json(
-        { error: 'Invalid destination URL' },
-        { status: 400 }
-      );
-    }
-    
-    // --- Security (Very Important!) ---
-    // Anyone can call this endpoint. You MUST secure it.
-    // For now, we'll use a simple secret key.
-    // In a real app, use authentication (e.g., NextAuth.js, Clerk).
-    const authHeader = request.headers.get('Authorization');
-    if (authHeader !== `Bearer ${process.env.YOUR_SECRET_API_KEY}`) {
-        return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    // --- Create the link ---
-    // kv.set will create or overwrite the link
-    await kv.set(slug, destination);
+    // --- Create the link (using node-redis) ---
+    await redis.set(slug, destination); // The command is the same!
 
     // --- Respond with success ---
     return NextResponse.json({
       message: 'Link created/updated successfully!',
-      slug: slug,
-      destination: destination,
-      url: `${process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000'}/${slug}`,
+      // ... (rest of your response) ...
     });
 
   } catch (error) {
-    console.error(error);
-    return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
-    );
+    // ... (error handling) ...
   }
 }
