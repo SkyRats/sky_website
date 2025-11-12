@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Skyrats Website
 
-## Getting Started
+Skyrats is an autonomous drone team from University of São Paulo. 
 
-First, run the development server:
+This is our official website 💜
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Contact
+We are very active on [Instagram](https://instagram.com/equipe_skyrats). You can reach out to us trough DM or take a look into our bio links.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Feel free to send us an email: equipeskyrats@gmail.com
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Feedback and reports on this website
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You can open Issues on this repo and even make Pull Requests.
 
-## Learn More
+If you need to know more about the deployment in skyrats.com.br ["Click Here"](https://registro.br/tecnologia/ferramentas/whois?search=skyrats.com.br) and contact the "Contato Técnico" listed on the domain registry.
 
-To learn more about Next.js, take a look at the following resources:
+## Copyright
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To use any of our public available content, please talk to our communication team, it will be quick. You can reach them trough Instagram or email.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+We always want to know where our content it's going to be displayed and how we might help and collaborate!
 
-## Deploy on Vercel
+## Techical bullet points for local development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Use node > v20
+- You will need a local redis server or connect to production server (not recommended)
+- Copy `.env.sample` file to a new `.env.development.local` file
+- `$ npm i` to install dependencies
+- `$ npm run dev` to start local development server
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Extra important information for devs
+
+- Deployment to production occurs in main branch, if the last commit was signed by skyrats.poli@gmail.com
+- Tough Swagger UI is not deployed, the api endpoints should be annotated with OpenAPI, copy and paste `app/api/openapi.yml` file [in this webviewer](https://editor.swagger.io/) to get access to API documentation
+
+Happy codding!

@@ -1,0 +1,100 @@
+openapi: '3.0.3'
+info:
+  title: Skyrats Website API
+  description: API for interacting with our website (NextJS) and it's database (Redis).
+  version: '1.0.0'
+servers:
+  - url: http://localhost:3000
+    description: Local development server
+  - url: https://skyrats.com.br
+    description: Production server
+paths:
+  /api/create-redirect:
+    post:
+      summary: Create or update a redirect link
+      description: Creates a new short link or updates an existing one based on the slug.
+      operationId: createOrUpdateLink
+      security:
+        - BearerAuth: []
+      requestBody:
+        description: The slug and destination URL for the link.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Request_create-redirect'
+      responses:
+        '201':
+          description: Link created successfully.
+          headers:
+            Location:
+              description: The full URL of the newly created resource.
+              schema:
+                type: string
+                format: uri
+                example: 'http://localhost:3000/redirect/my-link'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse_create-redirect'
+        '200':
+          description: Link updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse_create-redirect'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnauthorizedResponse'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: Enter your bearer token
+  schemas:
+    Request_create-redirect:
+      type: object
+      properties:
+        slug:
+          type: string
+          example: 'my-link'
+        destination:
+          type: string
+          format: uri
+          example: 'https://google.com'
+      required:
+        - slug
+        - destination
+    SuccessResponse_create-redirect:
+      type: object
+      properties:
+        message:
+          type: string
+          example: 'Redirect link created sucessfully.'
+        resourceUrl:
+          type: string
+          format: uri
+          example: 'http://localhost:3000/redirect/my-link'
+    UnauthorizedResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          example: '"Missing or invalid Authorization header" OR "Invalid API key."'
+    ErrorResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          example: 'Server configuration error: Redis not available.'

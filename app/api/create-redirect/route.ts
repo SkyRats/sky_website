@@ -1,12 +1,10 @@
-import { createClient } from 'redis'; // Import createClient
+import { createClient } from 'redis';
 import { NextResponse } from 'next/server';
 
-// --- Initialize Redis Client ---
-const redis_url = process.env.KV_URL || process.env.REDIS_URL;
+const redis_url = process.env.REDIS_URL;
 let client: ReturnType<typeof createClient> | null = null;
 
 if (redis_url) {
-  // 1. Create the client
   client = createClient({
     url: redis_url,
   });
@@ -16,45 +14,107 @@ if (redis_url) {
   });
 } else {
   console.error(
-    'Missing KV_URL or REDIS_URL environment variable. Redis client not initialized.'
+    'Missing REDIS_URL environment variable. Redis client not initialized.'
   );
 }
 
-// 2. We must connect *inside* the handler or use a connection manager
-//    because serverless functions are stateless. A simple "await" at
-//    the top level won't work. We also must not connect on every request.
-//    This is where `ioredis` is simpler.
-
-// A simple way to manage the connection in serverless:
 async function getConnectedClient() {
   if (!client) {
     throw new Error('Redis client not initialized');
   }
   if (!client.isOpen) {
     await client.connect();
+    console.log("REDIS connected.")
   }
   return client;
 }
 
 export async function POST(request: Request) {
   try {
-    // 3. Get the connected client
+    // --- Bearer Token Validation ---
+    const apiKey = process.env.BEARER_API_KEY;
+
+    // 1. Check if the server is configured with an API key
+    if (!apiKey) {
+      console.error('Server config error: BEARER_API_KEY is not set.');
+      // This is a server configuration error
+      return NextResponse.json(
+        { message: 'Server configuration error.' },
+        { status: 500 }
+      );
+    }
+
+    // 2. Get the Authorization header from the request
+    const authHeader = request.headers.get('Authorization');
+
+    // 3. Check if the header is present and has the correct format
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return NextResponse.json(
+        { message: 'Missing or invalid Authorization header.' },
+        { status: 401 } // 401 Unauthorized
+      );
+    }
+
+    // 4. Extract and validate the token
+    const token = authHeader.substring(7); // Remove "Bearer " prefix
+    if (token !== apiKey) {
+      return NextResponse.json(
+        { message: 'Invalid API key.' },
+        { status: 401 } // 401 Unauthorized
+      );
+    }
+    // --- End Security Validation ---
+
+    
+    // ... (Data validation logic should go here) ...
+    const { slug, destination } = await request.json();
+    // e.g., check if slug and destination are valid strings
+
+    // If all validation passed, proceed to redis connection
     const redis = await getConnectedClient();
 
-    const { slug, destination } = await request.json();
-
-    // ... (rest of your validation and security code is identical) ...
-
-    // --- Create the link (using node-redis) ---
-    await redis.set(slug, destination); // The command is the same!
-
-    // --- Respond with success ---
-    return NextResponse.json({
-      message: 'Link created/updated successfully!',
-      // ... (rest of your response) ...
+    // --- Create/Update the link (using node-redis 'SET...GET' option) ---
+    // This command sets the new value and returns the *old* value.
+    // If the old value is 'null', it was a new key (a create).
+    const oldDestination = await redis.set(slug, destination, {
+      GET: true, // This is the key: returns the old value
     });
 
+    const wasCreated = oldDestination === null;
+
+    // --- Dynamically get the base URL (works for local & prod) ---
+    // new URL(request.url).origin gives "http://localhost:3000" or "https://your-site.com"
+    const baseUrl = new URL(request.url).origin;
+    const resourceUrl = `${baseUrl}/redirect/${slug}`;
+
+    // --- Respond RESTfully ---
+    if (wasCreated) {
+      // **CREATED**
+      return NextResponse.json({ message: 'Redirect link created sucessfully.', resourceUrl}, {
+        status: 201, // 201 Created
+        headers: {
+          'Location': resourceUrl, // Location header is required for 201
+        },
+      });
+    } else {
+      // **UPDATED**
+      return NextResponse.json({ message: 'Redirect link updated sucessfully.', resourceUrl}, {
+        status: 200, // 200 OK
+      });
+    }
+
   } catch (error) {
-    // ... (error handling) ...
+    console.error('Error in POST /api/links:', error);
+    if (error instanceof Error && error.message.includes('not initialized')) {
+      return NextResponse.json(
+        { message: 'Server configuration error: Redis not available.' },
+        { status: 500 }
+      );
+    }
+    // General error
+    return NextResponse.json(
+      { message: 'An internal server error occurred.' },
+      { status: 500 }
+    );
   }
 }
